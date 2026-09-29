@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Onde Descartar? | Resíduos Eletrônicos</title>
+<style>
+  :root {
+    --green:#2f6b4f;
+    --green2:#5d8f6d;
+    --light:#f3f7f2;
+    --blue:#dcecf3;
+    --text:#26352c;
+    --muted:#64736a;
+    --white:#ffffff;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    color:var(--text);
+    background:linear-gradient(180deg,#eef6ef 0%,#fff 35%);
+  }
+  header{
+    padding:48px 20px 34px;
+    text-align:center;
+    background:var(--green);
+    color:white;
+  }
+  header .icon{font-size:48px}
+  header h1{margin:8px 0 8px;font-size:34px}
+  header p{margin:0 auto;max-width:680px;line-height:1.5;font-size:16px}
+  main{max-width:1050px;margin:0 auto;padding:30px 18px 55px}
+  .notice{
+    background:#fff;
+    border-left:5px solid var(--green2);
+    padding:16px 18px;
+    border-radius:10px;
+    box-shadow:0 2px 12px rgba(0,0,0,.06);
+    margin-bottom:28px;
+    line-height:1.5;
+  }
+  .city{
+    margin-top:34px;
+  }
+  .city h2{font-size:25px;margin-bottom:5px}
+  .city .city-info{color:var(--muted);margin-bottom:18px}
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:15px;
+  }
+  .card{
+    background:var(--white);
+    border-radius:14px;
+    padding:19px;
+    box-shadow:0 3px 14px rgba(40,70,50,.09);
+    border:1px solid #e4ebe4;
+  }
+  .card h3{margin:0 0 9px;color:var(--green);font-size:18px}
+  .card p{margin:7px 0;line-height:1.45}
+  button{
+    margin-top:12px;
+    border:0;
+    border-radius:8px;
+    padding:9px 12px;
+    background:var(--green);
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+  }
+  button:hover{opacity:.9}
+  .copied{background:var(--green2)!important}
+  .tag{
+    display:inline-block;
+    margin-top:7px;
+    padding:5px 9px;
+    border-radius:999px;
+    background:var(--light);
+    font-size:12px;
+    font-weight:bold;
+  }
+  .sources{
+    margin-top:38px;
+    padding:20px;
+    background:var(--blue);
+    border-radius:14px;
+    line-height:1.5;
+  }
+  .sources a{color:#174d67}
+  footer{
+    text-align:center;
+    color:var(--muted);
+    padding:24px 15px 40px;
+    font-size:13px;
+  }
+  @media(max-width:600px){
+    header h1{font-size:27px}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="icon">♻️</div>
+  <h1>Onde Descartar?</h1>
+  <p>Encontre pontos de descarte de resíduos eletrônicos em Salto e região.</p>
+</header>
+
+<main>
+  <div class="notice">
+    <strong>Antes de descartar:</strong> confira o tipo de material aceito pelo local.
+    As informações abaixo foram verificadas em fontes oficiais municipais. Horários e regras
+    podem sofrer alterações; confirme antes de sair.
+  </div>
+
+  <section class="city">
+    <h2>📍 Salto – SP</h2>
+    <p class="city-info">Rede de 11 Ecopontos. Horário informado pela CSO Ambiental: segunda a sexta, das 8h às 17h. Confira as orientações do local antes de levar o material.</p>
+    <div class="grid">
+      <div class="card"><h3>Ecoponto 01 – Jardim das Nações</h3><p>Rua Argélia, 361</p><span class="tag">Copiar endereço</span><button onclick="copyAddress('Rua Argélia, 361, Salto - SP')">Copiar endereço</button></div>
+      <div class="card"><h3>Ecoponto 02 – Jardim Santa Cruz</h3><p>Rua Rangel Pestana, 529</p><span class="tag">Copiar endereço</span><button onclick="copyAddress('Rua Rangel Pestana, 529, Salto - SP')">Copiar endereço</button></div>
+      <div class="card"><h3>Ecoponto 03 – Jardim São João</h3><p>Rua Vaticano, 650</p><button onclick="copyAddress('Rua Vaticano, 650, Salto - SP')">Copiar endereço</button></div>
+      <div class="card"><h3>Ecoponto 04 – Jardim Cidade</h3><p>Rua Botucatu, 409</p><button onclick="copyAddress('Rua Botucatu, 409, Salto - SP')">Copiar endereço</button></div>
+      <div class="card"><h3>Ecoponto 05 – São Pedro e São Paulo</h3><p>Rua Estado do Rio Grande do Sul, 1.303</p><button onclick="copyAddress('Rua Estado do Rio Grande do Sul, 1303, Salto - SP')">Copiar endereço</button></div>
+      <div class="card"><h3>Ecoponto 06 – Jardim São Gabriel / Ecoponto Escola</h3><p>Rua São Raimundo, 85</p><button onclick="copyAddress('Rua São Raimundo, 85, Salto - SP')">Copiar endereço</button></div>
+      <div class="card"><h3>Ecoponto 07 – Parque Residencial Rondon</h3><p>Rua Domingos José da Cruz, 130</p><button onclick="copyAddress('Rua Domingos José da Cruz, 130, Salto - SP')">Copiar endereço</button></div>
+      <div class="card"><h3>Ecoponto 08 – Salto Ville</h3><p>Rua Padre Carlos Corrêa Tolêdo Melo, 340</p><button onclick="copyAddress('Rua Padre Carlos Corrêa Tolêdo Melo, 340, Salto - SP')">Copiar endereço</button></div>
+      <div class="card"><h3>Ecoponto 09 – CEA</h3><p>Rua Mal. Euríco Gáspar Dutra, 100</p><button onclick="copyAddress('Rua Mal. Euríco Gáspar Dutra, 100, Salto - SP')">Copiar endereço</button></div>
+      <div class="card"><h3>Ecoponto 10 – Jardim Santo Antônio</h3><p>Rua Carlos Gomes, 492</p><button onclick="copyAddress('Rua Carlos Gomes, 492, Salto - SP')">Copiar endereço</button></div>
+      <div class="card"><h3>Ecoponto 11 – Quintal / Jardim Planalto</h3><p>Rua das Nações Unidas, 1501</p><button onclick="copyAddress('Rua das Nações Unidas, 1501, Salto - SP')">Copiar endereço</button></div>
+    </div>
+  </section>
+
+  <section class="city">
+    <h2>📍 Itu – SP</h2>
+    <p class="city-info">Ecopontos municipais. Segunda a sábado, das 8h às 17h. Recebem eletroeletrônicos.</p>
+    <div class="grid">
+      <div class="card"><h3>Ecoponto Parque Chico Mendes</h3><p>Av. Esperança, 315 – Cidade Nova</p><span class="tag">Eletroeletrônicos</span><button onclick="copyAddress('Av. Esperança, 315 – Cidade Nova')">Copiar endereço</button></div>
+      <div class="card"><h3>Ecoponto Jardim União</h3><p>Av. Ernesto Rodrigues, 80 – Vila Martins</p><span class="tag">Eletroeletrônicos</span><button onclick="copyAddress('Av. Ernesto Rodrigues, 80 – Vila Martins')">Copiar endereço</button></div>
+      <div class="card"><h3>Ecoponto São Judas</h3><p>Av. Antonio Almeida Sampaio, 201 – São Judas Tadeu</p><span class="tag">Eletroeletrônicos</span><button onclick="copyAddress('Av. Antonio Almeida Sampaio, 201 – São Judas Tadeu')">Copiar endereço</button></div>
+      <div class="card"><h3>Ecoponto Jardim Aeroporto</h3><p>Av. Abílio Piunti, 300 – Jardim Aeroporto</p><span class="tag">Eletroeletrônicos</span><button onclick="copyAddress('Av. Abílio Piunti, 300 – Jardim Aeroporto')">Copiar endereço</button></div>
+      <div class="card"><h3>Ecoponto Jardim das Rosas</h3><p>Av. das Rosas, 1.800 – Jardim das Rosas</p><span class="tag">Eletroeletrônicos</span><button onclick="copyAddress('Av. das Rosas, 1.800 – Jardim das Rosas')">Copiar endereço</button></div>
+      <div class="card"><h3>Ecoponto Jardim Santa Rosa</h3><p>Rua Antenor Faustino, 567 – Jardim Santa Rosa</p><span class="tag">Eletroeletrônicos</span><button onclick="copyAddress('Rua Antenor Faustino, 567 – Jardim Santa Rosa')">Copiar endereço</button></div>
+      <div class="card"><h3>Ecoponto Jardim Padre Bento</h3><p>Av. Carolina Cardin Piunti, 251 – Jardim Padre Bento</p><span class="tag">Eletroeletrônicos</span><button onclick="copyAddress('Av. Carolina Cardin Piunti, 251 – Jardim Padre Bento')">Copiar endereço</button></div>
+      <div class="card"><h3>Ecoponto Parque Almeida Jr.</h3><p>Av. do Parque, 251 – Jardim Plaza Athenée</p><span class="tag">Eletroeletrônicos</span><button onclick="copyAddress('Av. do Parque, 251 – Jardim Plaza Athenée')">Copiar endereço</button></div>
+    </div>
+  </section>
+
+  <section class="city">
+    <h2>📍 Indaiatuba – SP</h2>
+    <p class="city-info">Os quatro ecopontos municipais funcionam diariamente, das 7h às 19h, inclusive domingos e feriados. A Prefeitura informa recebimento de lixo eletrônico, lâmpadas, pilhas e baterias.</p>
+    <div class="grid">
+      <div class="card"><h3>Ecoponto Jardim Nova Veneza</h3><p>Rua Padre Arthur Lupurini Sampaio, esquina com Rua José Vilalta, 51</p><span class="tag">Eletrônicos • Pilhas • Baterias</span><button onclick="copyAddress('Rua Padre Arthur Lupurini Sampaio, esquina com Rua José Vilalta, 51')">Copiar endereço</button></div>
+      <div class="card"><h3>Ecoponto Jardim João Pioli</h3><p>Av. Manoel Ruz Peres, esquina com Av. Artes e Ofícios, 237</p><span class="tag">Eletrônicos • Pilhas • Baterias</span><button onclick="copyAddress('Av. Manoel Ruz Peres, esquina com Av. Artes e Ofícios, 237')">Copiar endereço</button></div>
+      <div class="card"><h3>Ecoponto Quintal – Jardim Eldorado</h3><p>Rua Reverendo Eliseu Narciso, esquina com Rua do Badin, 709</p><span class="tag">Eletrônicos • Pilhas • Baterias</span><button onclick="copyAddress('Rua Reverendo Eliseu Narciso, esquina com Rua do Badin, 709')">Copiar endereço</button></div>
+      <div class="card"><h3>Ecoponto Jardim Olinda</h3><p>Esquina da Rua Tamoio com Rua Valdir Ferrari, 104</p><span class="tag">Eletrônicos • Pilhas • Baterias</span><button onclick="copyAddress('Esquina da Rua Tamoio com Rua Valdir Ferrari, 104')">Copiar endereço</button></div>
+    </div>
+  </section>
+
+  <div class="sources">
+    <strong>Fontes oficiais consultadas</strong>
+    <ul>
+      <li><a href="https://salto.sp.gov.br/wp-content/uploads/2024/01/Plano-Municipal-de-Gestao-Integrada-de-Residuos-Solidos.pdf" target="_blank">Prefeitura de Salto – Plano Municipal de Gestão Integrada de Resíduos Sólidos</a></li>
+      <li><a href="https://itu.sp.gov.br/meio-ambiente/gestao-do-lixo/ecopontos/" target="_blank">Prefeitura de Itu – Ecopontos</a></li>
+      <li><a href="https://www.indaiatuba.sp.gov.br/urbanismo/coleta-seletiva/" target="_blank">Prefeitura de Indaiatuba – Coleta Seletiva</a></li>
+    </ul>
+  </div>
+</main>
+
+<footer>
+  Projeto extensionista – Meio Ambiente e Saúde<br>
+  Automação Industrial • Logística • ADS
+</footer>
+<script>
+function copyAddress(address){
+  navigator.clipboard.writeText(address).then(function(){
+    const buttons = document.querySelectorAll('button');
+    buttons.forEach(b => {
+      if (b.getAttribute('onclick') && b.getAttribute('onclick').includes(address.replace(/'/g, "\\'"))) {
+        const old = b.textContent;
+        b.textContent = '✓ Endereço copiado!';
+        b.classList.add('copied');
+        setTimeout(() => { b.textContent = old; b.classList.remove('copied'); }, 1800);
+      }
+    });
+  });
+}
+</script>
+</body>
+</html>
