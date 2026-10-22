@@ -59,6 +59,7 @@
   }
   .card h3{margin:0 0 9px;color:var(--green);font-size:18px}
   .card p{margin:7px 0;line-height:1.45}
+  .card p.accepted{font-size:13px;color:var(--muted);border-top:1px solid #e4ebe4;padding-top:9px;margin-top:11px}
   button{
     margin-top:12px;
     border:0;
@@ -71,6 +72,8 @@
   }
   button:hover{opacity:.9}
   .copied{background:var(--green2)!important}
+  .card-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
+  .card-tags .tag{margin-top:0}
   .tag{
     display:inline-block;
     margin-top:7px;
@@ -80,6 +83,19 @@
     font-size:12px;
     font-weight:bold;
   }
+  .materials{
+    margin:16px 0 20px;
+    padding:20px;
+    background:#eef8ef;
+    border:1px solid #d7e8d9;
+    border-radius:14px;
+  }
+  .materials h3{margin:0 0 14px;color:var(--green);font-size:20px}
+  .material-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+  .material-grid > div{background:#fff;border-radius:10px;padding:13px;line-height:1.45}
+  .material-grid p{font-size:14px;margin:7px 0 0}
+  .material-note{font-size:13px;color:#7a4d23;margin:14px 0 6px}
+  .official-link{font-size:14px;margin:8px 0 0}
   .sources{
     margin-top:38px;
     padding:20px;
@@ -108,26 +124,32 @@
 
 <main>
   <div class="notice">
-    <strong>Antes de descartar:</strong> confira o tipo de material aceito pelo local.
-    As informações abaixo foram verificadas em fontes oficiais municipais. Horários e regras
-    podem sofrer alterações; confirme antes de sair.
+    <strong>Antes de descartar:</strong> confira os materiais aceitos e o horário antes de sair.
+    A CSO Ambiental informa que os 11 Ecopontos de Salto funcionam gratuitamente de segunda a sábado,
+    das 7h40 às 16h. Alguns materiais têm recebimento específico; em caso de dúvida, confirme com a CSO.
   </div>
 
   <section class="city">
     <h2>📍 Salto – SP</h2>
-    <p class="city-info">Rede de 11 Ecopontos. Horário informado pela CSO Ambiental: segunda a sexta, das 8h às 17h. Confira as orientações do local antes de levar o material.</p>
+    <p class="city-info">Rede de 11 Ecopontos, com uso gratuito de segunda a sábado, das 7h40 às 16h. A rede recebe eletroeletrônicos, pilhas e baterias de pequeno porte, além de outros materiais conforme as regras de cada unidade.</p>
+    <div class="materials">
+      <h3>Tipos de resíduos recebidos</h3>
+      <p>Nos Ecopontos de Salto, o levantamento do grupo indica recebimento de <strong>eletrônicos, celulares, computadores, cabos e carregadores, eletrodomésticos, pilhas e baterias de pequeno porte</strong>. Outros materiais, como lâmpadas, móveis, óleo de cozinha e pneus, podem variar conforme a unidade.</p>
+      <p class="material-note">Antes de levar o material, confirme a aceitação do item específico com a CSO Ambiental, especialmente baterias de grande porte ou automotivas.</p>
+      <p class="official-link"><a href="https://csoambiental.com.br/servicos/" target="_blank" rel="noopener">Consultar a lista oficial da CSO Ambiental</a> · Dúvidas: 0800 940 3203.</p>
+    </div>
     <div class="grid">
-      <div class="card"><h3>Ecoponto 01 – Jardim das Nações</h3><p>Rua Argélia, 361</p><span class="tag">Copiar endereço</span><button onclick="copyAddress('Rua Argélia, 361, Salto - SP')">Copiar endereço</button></div>
-      <div class="card"><h3>Ecoponto 02 – Jardim Santa Cruz</h3><p>Rua Rangel Pestana, 529</p><span class="tag">Copiar endereço</span><button onclick="copyAddress('Rua Rangel Pestana, 529, Salto - SP')">Copiar endereço</button></div>
-      <div class="card"><h3>Ecoponto 03 – Jardim São João</h3><p>Rua Vaticano, 650</p><button onclick="copyAddress('Rua Vaticano, 650, Salto - SP')">Copiar endereço</button></div>
-      <div class="card"><h3>Ecoponto 04 – Jardim Cidade</h3><p>Rua Botucatu, 409</p><button onclick="copyAddress('Rua Botucatu, 409, Salto - SP')">Copiar endereço</button></div>
-      <div class="card"><h3>Ecoponto 05 – São Pedro e São Paulo</h3><p>Rua Estado do Rio Grande do Sul, 1.303</p><button onclick="copyAddress('Rua Estado do Rio Grande do Sul, 1303, Salto - SP')">Copiar endereço</button></div>
-      <div class="card"><h3>Ecoponto 06 – Jardim São Gabriel / Ecoponto Escola</h3><p>Rua São Raimundo, 85</p><button onclick="copyAddress('Rua São Raimundo, 85, Salto - SP')">Copiar endereço</button></div>
-      <div class="card"><h3>Ecoponto 07 – Parque Residencial Rondon</h3><p>Rua Domingos José da Cruz, 130</p><button onclick="copyAddress('Rua Domingos José da Cruz, 130, Salto - SP')">Copiar endereço</button></div>
-      <div class="card"><h3>Ecoponto 08 – Salto Ville</h3><p>Rua Padre Carlos Corrêa Tolêdo Melo, 340</p><button onclick="copyAddress('Rua Padre Carlos Corrêa Tolêdo Melo, 340, Salto - SP')">Copiar endereço</button></div>
-      <div class="card"><h3>Ecoponto 09 – CEA</h3><p>Rua Mal. Euríco Gáspar Dutra, 100</p><button onclick="copyAddress('Rua Mal. Euríco Gáspar Dutra, 100, Salto - SP')">Copiar endereço</button></div>
-      <div class="card"><h3>Ecoponto 10 – Jardim Santo Antônio</h3><p>Rua Carlos Gomes, 492</p><button onclick="copyAddress('Rua Carlos Gomes, 492, Salto - SP')">Copiar endereço</button></div>
-      <div class="card"><h3>Ecoponto 11 – Quintal / Jardim Planalto</h3><p>Rua das Nações Unidas, 1501</p><button onclick="copyAddress('Rua das Nações Unidas, 1501, Salto - SP')">Copiar endereço</button></div>
+      <div class="card"><h3>Ecoponto 01 – Jardim das Nações</h3><p>Rua Argélia, 361</p><div class="card-tags"><span class="tag">Eletrônicos</span><span class="tag">Pilhas e baterias</span><span class="tag">Celulares</span><span class="tag">Cabos e carregadores</span><span class="tag">Eletrodomésticos</span></div><button onclick="copyAddress('Rua Argélia, 361, Salto - SP')">Copiar endereço</button></div>
+      <div class="card"><h3>Ecoponto 02 – Jardim Santa Cruz</h3><p>Rua Rangel Pestana, 529</p><div class="card-tags"><span class="tag">Eletrônicos</span><span class="tag">Pilhas e baterias</span><span class="tag">Celulares</span><span class="tag">Cabos e carregadores</span><span class="tag">Eletrodomésticos</span></div><button onclick="copyAddress('Rua Rangel Pestana, 529, Salto - SP')">Copiar endereço</button></div>
+      <div class="card"><h3>Ecoponto 03 – Jardim São João</h3><p>Rua Vaticano, 650</p><div class="card-tags"><span class="tag">Eletrônicos</span><span class="tag">Pilhas e baterias</span><span class="tag">Celulares</span><span class="tag">Cabos e carregadores</span><span class="tag">Eletrodomésticos</span></div><button onclick="copyAddress('Rua Vaticano, 650, Salto - SP')">Copiar endereço</button></div>
+      <div class="card"><h3>Ecoponto 04 – Jardim Cidade</h3><p>Rua Botucatu, 409</p><div class="card-tags"><span class="tag">Eletrônicos</span><span class="tag">Pilhas e baterias</span><span class="tag">Celulares</span><span class="tag">Cabos e carregadores</span><span class="tag">Eletrodomésticos</span></div><button onclick="copyAddress('Rua Botucatu, 409, Salto - SP')">Copiar endereço</button></div>
+      <div class="card"><h3>Ecoponto 05 – São Pedro e São Paulo</h3><p>Rua Estado do Rio Grande do Sul, 1.303</p><div class="card-tags"><span class="tag">Eletrônicos</span><span class="tag">Pilhas e baterias</span><span class="tag">Celulares</span><span class="tag">Cabos e carregadores</span><span class="tag">Eletrodomésticos</span><span class="tag">Pneus</span></div><button onclick="copyAddress('Rua Estado do Rio Grande do Sul, 1303, Salto - SP')">Copiar endereço</button></div>
+      <div class="card"><h3>Ecoponto 06 – Jardim São Gabriel / Ecoponto Escola</h3><p>Rua São Raimundo, 85</p><div class="card-tags"><span class="tag">Eletrônicos</span><span class="tag">Pilhas e baterias</span><span class="tag">Celulares</span><span class="tag">Cabos e carregadores</span><span class="tag">Eletrodomésticos</span><span class="tag">Pneus</span></div><button onclick="copyAddress('Rua São Raimundo, 85, Salto - SP')">Copiar endereço</button></div>
+      <div class="card"><h3>Ecoponto 07 – Parque Residencial Rondon</h3><p>Rua Domingos José da Cruz, 130</p><div class="card-tags"><span class="tag">Eletrônicos</span><span class="tag">Pilhas e baterias</span><span class="tag">Celulares</span><span class="tag">Cabos e carregadores</span><span class="tag">Eletrodomésticos</span></div><button onclick="copyAddress('Rua Domingos José da Cruz, 130, Salto - SP')">Copiar endereço</button></div>
+      <div class="card"><h3>Ecoponto 08 – Salto Ville</h3><p>Rua Padre Carlos Corrêa Tolêdo Melo, 340</p><div class="card-tags"><span class="tag">Eletrônicos</span><span class="tag">Pilhas e baterias</span><span class="tag">Celulares</span><span class="tag">Cabos e carregadores</span><span class="tag">Eletrodomésticos</span><span class="tag">Pneus</span></div><button onclick="copyAddress('Rua Padre Carlos Corrêa Tolêdo Melo, 340, Salto - SP')">Copiar endereço</button></div>
+      <div class="card"><h3>Ecoponto 09 – CEA</h3><p>Rua Mal. Euríco Gáspar Dutra, 100</p><div class="card-tags"><span class="tag">Eletrônicos</span><span class="tag">Pilhas e baterias</span><span class="tag">Celulares</span><span class="tag">Cabos e carregadores</span><span class="tag">Eletrodomésticos</span></div><button onclick="copyAddress('Rua Mal. Euríco Gáspar Dutra, 100, Salto - SP')">Copiar endereço</button></div>
+      <div class="card"><h3>Ecoponto 10 – Jardim Santo Antônio</h3><p>Rua Carlos Gomes, 492</p><div class="card-tags"><span class="tag">Eletrônicos</span><span class="tag">Pilhas e baterias</span><span class="tag">Celulares</span><span class="tag">Cabos e carregadores</span><span class="tag">Eletrodomésticos</span></div><button onclick="copyAddress('Rua Carlos Gomes, 492, Salto - SP')">Copiar endereço</button></div>
+      <div class="card"><h3>Ecoponto 11 – Quintal / Jardim Planalto</h3><p>Rua das Nações Unidas, 1501</p><div class="card-tags"><span class="tag">Eletrônicos</span><span class="tag">Pilhas e baterias</span><span class="tag">Celulares</span><span class="tag">Cabos e carregadores</span><span class="tag">Eletrodomésticos</span><span class="tag">Pneus</span></div><button onclick="copyAddress('Rua das Nações Unidas, 1501, Salto - SP')">Copiar endereço</button></div>
     </div>
   </section>
 
@@ -160,7 +182,8 @@
   <div class="sources">
     <strong>Fontes oficiais consultadas</strong>
     <ul>
-      <li><a href="https://salto.sp.gov.br/wp-content/uploads/2024/01/Plano-Municipal-de-Gestao-Integrada-de-Residuos-Solidos.pdf" target="_blank">Prefeitura de Salto – Plano Municipal de Gestão Integrada de Resíduos Sólidos</a></li>
+      <li><a href="https://csoambiental.com.br/servicos/" target="_blank" rel="noopener">CSO Ambiental – Ecopontos de Salto: materiais recebidos, horário e endereços</a></li>
+      <li><a href="https://salto.sp.gov.br/wp-content/uploads/2024/01/Plano-Municipal-de-Gestao-Integrada-de-Residuos-Solidos.pdf" target="_blank" rel="noopener">Prefeitura de Salto – Plano Municipal de Gestão Integrada de Resíduos Sólidos</a></li>
       <li><a href="https://itu.sp.gov.br/meio-ambiente/gestao-do-lixo/ecopontos/" target="_blank">Prefeitura de Itu – Ecopontos</a></li>
       <li><a href="https://www.indaiatuba.sp.gov.br/urbanismo/coleta-seletiva/" target="_blank">Prefeitura de Indaiatuba – Coleta Seletiva</a></li>
     </ul>
